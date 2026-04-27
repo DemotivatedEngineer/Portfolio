@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Interactive portfolio for Arpit Seth, Software Development Engineer 2 focused on distributed systems, AI orchestration, and seller experience platforms."
+    />
+    <title>Arpit Seth | Software Development Engineer 2</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <canvas id="signalCanvas" aria-hidden="true"></canvas>
+
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Arpit Seth home">
+        <span>AS</span>
+      </a>
+      <nav class="navlinks" aria-label="Primary navigation">
+        <a href="#impact">Impact</a>
+        <a href="#work">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+      </nav>
+      <div class="topbar-actions" aria-label="Recruiter links">
+        <a href="https://drive.google.com/file/d/1tuOLpDECxCtkWygZrkefNW4yd4Sib6-J/view?usp=sharing" target="_blank" rel="noreferrer">Resume</a>
+        <a href="mailto:arpitseth20022002@gmail.com">Email</a>
+        <a href="https://linkedin.com/in/arpit-seth/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://github.com/SETHJ101" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+      <button class="icon-button" id="themeToggle" type="button" aria-label="Toggle theme" title="Toggle theme">
+        <span class="sun">☀</span>
+        <span class="moon">☾</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">SDE-2 @ Amazon · Distributed Systems · Backend · AI Systems</p>
+          <h1>Backend & agentic AI platform engineer for high-scale product systems.</h1>
+          <p class="hero-summary">
+            I build scalable backend services, agentic systems, and seller-facing platforms with measurable
+            improvements in scale, latency, onboarding, and reliability.
+          </p>
+          <div class="recruiter-strip" aria-label="Recruiter summary">
+            <span>Java</span>
+            <span>Distributed systems</span>
+            <span>Agentic systems</span>
+            <span>MCP</span>
+            <span>RAG</span>
+            <span>Multi-agent orchestration</span>
+            <span>Bedrock AgentCore</span>
+            <span>DynamoDB</span>
+          </div>
+          <div class="quick-facts" aria-label="Career highlights">
+            <div>
+              <strong>400K+</strong>
+              <span>invoices/month</span>
+            </div>
+            <div>
+              <strong>75%</strong>
+              <span>LCP reduction</span>
+            </div>
+            <div>
+              <strong>15+</strong>
+              <span>tenants on agent platform</span>
+            </div>
+          </div>
+          <ul class="hero-proof">
+            <li>Built GST invoicing microservice from scratch with high-concurrency locking and retry flows.</li>
+            <li>Reduced seller page LCP by 75% and FCP by 70% through SSR migration.</li>
+            <li>Built config-driven support agent platform adopted by 15+ tenants.</li>
+          </ul>
+        </div>
+
+        <div class="resume-panel" aria-label="Resume preview">
+          <div class="resume-toolbar">
+            <span></span>
+            <span></span>
+            <span></span>
+            <a href="https://drive.google.com/file/d/1tuOLpDECxCtkWygZrkefNW4yd4Sib6-J/view?usp=sharing" target="_blank" rel="noreferrer">View resume</a>
+          </div>
+          <img src="assets/images/resume-preview.png" alt="Preview of Arpit Seth's resume" />
+        </div>
+      </section>
+
+      <section class="section band" id="impact">
+        <div class="section-heading">
+          <p class="eyebrow">Recruiter Snapshot</p>
+          <h2>Impact that maps directly to SDE-2 expectations.</h2>
+        </div>
+        <div class="impact-grid">
+          <button class="impact-card is-active" type="button" data-impact="scale">
+            <span>Scale</span>
+            <strong>Distributed GST invoicing</strong>
+          </button>
+          <button class="impact-card" type="button" data-impact="ai">
+            <span>AI Platforms</span>
+            <strong>Agentic systems</strong>
+          </button>
+          <button class="impact-card" type="button" data-impact="ux">
+            <span>Performance</span>
+            <strong>SSR migration</strong>
+          </button>
+          <button class="impact-card" type="button" data-impact="platform">
+            <span>Platform</span>
+            <strong>Multi-tenant infra</strong>
+          </button>
+        </div>
+        <article class="impact-detail" id="impactDetail" aria-live="polite"></article>
+      </section>
+
+      <section class="section" id="work">
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+          <h2>Production ownership across scale, performance, and platform work.</h2>
+        </div>
+        <div class="work-highlight-grid" aria-label="Amazon work highlights">
+          <article>
+            <span>GST Invoicing</span>
+            <strong>Built in-house invoice generation for 400K+ monthly invoices with async processing, auditability, and compliance-safe tax flows.</strong>
+          </article>
+          <article>
+            <span>Ship With Amazon</span>
+            <strong>Redesigned shipping webhook flows for 400K+ monthly events and reduced setup time by ~80% through automation.</strong>
+          </article>
+          <article>
+            <span>SSR & SEO</span>
+            <strong>Migrated storefront and order pages to Next.js SSR, improving LCP by ~75% and FCP by ~60-70%.</strong>
+          </article>
+          <article>
+            <span>Agentic Platform</span>
+            <strong>Built multi-agent orchestration and config-driven RAG support agent infrastructure, including plug-in MCP/KB setup adopted by 15+ tenants.</strong>
+          </article>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-date">Jan 2024 - Present</div>
+            <div class="timeline-content">
+              <h3>Amazon · Software Development Engineer 2</h3>
+              <ul class="work-list">
+                <li>Architected distributed GST invoicing service processing 400K+ invoices/month.</li>
+                <li>Built a multi-agent orchestrator that coordinates 8-10 specialized agents and standardizes agent I/O contracts for frontend consumption.</li>
+                <li>Created a config-driven RAG support agent where teams plug in MCP tools and knowledge bases to launch tenant-ready support agents.</li>
+                <li>Created asynchronous seller intelligence workflows that periodically analyze ads, listings, sales, and storefront data to generate actionable growth recommendations.</li>
+                <li>Delivered SSR migration with 75% LCP and 70% FCP improvement for seller-facing pages.</li>
+                <li>Improved Ship With Amazon event handling, seller-facing errors, DevOps automation, and production debuggability.</li>
+                <li>Resolved OTP brute-force risk, STS credential expiry issues, and reporting gaps affecting business-critical data.</li>
+              </ul>
+              <div class="tag-row">
+                <span>Java</span>
+                <span>AWS Bedrock</span>
+                <span>Bedrock AgentCore</span>
+                <span>Agentic Systems</span>
+                <span>Multi-Agent Orchestration</span>
+                <span>RAG</span>
+                <span>MCP</span>
+                <span>Tool-Calling Agents</span>
+                <span>Next.js</span>
+                <span>DynamoDB</span>
+                <span>Distributed Systems</span>
+              </div>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-date">Jul 2023 - Dec 2023</div>
+            <div class="timeline-content">
+              <h3>Synopsys · R&D Engineer 1</h3>
+              <ul class="work-list">
+                <li>Developed fault probability logic for complex designs to improve risk assessment.</li>
+                <li>Worked across design analysis and testing workflows to improve fault analysis accuracy.</li>
+              </ul>
+              <div class="tag-row">
+                <span>C++</span>
+                <span>Verilog</span>
+                <span>Testing</span>
+              </div>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-date">May 2022 - Jul 2022</div>
+            <div class="timeline-content">
+              <h3>Goldman Sachs · Software Engineering Intern</h3>
+              <ul class="work-list">
+                <li>Built Java backend services for document management and client onboarding.</li>
+                <li>Reduced onboarding time from 7 days to under an hour with REST APIs and MongoDB.</li>
+              </ul>
+              <div class="tag-row">
+                <span>Java</span>
+                <span>Spring Boot</span>
+                <span>MongoDB</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section skills-section" id="skills">
+        <div class="section-heading">
+          <p class="eyebrow">Skills</p>
+          <h2>Core stack and working strengths.</h2>
+        </div>
+        <div class="skill-groups">
+          <article>
+            <h3>Backend</h3>
+            <p>Java, Python, C++, REST APIs, distributed systems, locking, retries, production debugging.</p>
+          </article>
+          <article>
+            <h3>AI & Cloud</h3>
+            <p>Agentic AI, multi-agent orchestration, RAG, MCP, tool-calling agents, knowledge bases, AWS Bedrock, Bedrock AgentCore, Strands SDK, GenAI workflows, authentication and latency optimization.</p>
+          </article>
+          <article>
+            <h3>Frontend & Data</h3>
+            <p>Next.js, React, SSR, DynamoDB, MongoDB, MySQL, Git/GitHub.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section band" id="projects">
+        <div class="section-heading row-heading">
+          <div>
+            <p class="eyebrow">Projects & Publication</p>
+            <h2>Selected proof of range.</h2>
+          </div>
+          <div class="filters" aria-label="Project filters">
+            <button class="filter is-active" type="button" data-filter="all">All</button>
+            <button class="filter" type="button" data-filter="ai">AI/Data</button>
+            <button class="filter" type="button" data-filter="web">Web</button>
+            <button class="filter" type="button" data-filter="research">Research</button>
+          </div>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card featured-project" data-kind="ai">
+            <div class="project-topline">
+              <span>Open Source · Strands Agents</span>
+              <strong>Merged PR</strong>
+            </div>
+            <h3>Enhanced retrieve tool with configurable metadata output</h3>
+            <p>
+              Contributed to the public Strands Agents tools repository by adding optional metadata output,
+              environment-variable defaults, backward-compatible formatting, tests, documentation, and examples.
+            </p>
+            <a href="https://github.com/strands-agents/tools/pull/283" target="_blank" rel="noreferrer">
+              View merged PR
+            </a>
+          </article>
+          <article class="project-card featured-project" data-kind="ai research">
+            <div class="project-topline">
+              <span>Springer · Multimedia Tools and Applications</span>
+              <strong>Research + Project</strong>
+            </div>
+            <h3>Leveraging blockchain and machine learning to counter DDoS attacks over IoT network</h3>
+            <p>
+              Research-backed project for DDoS detection and mitigation using blockchain and machine learning.
+              Integrated Random Forest, feature selection, and Web3.py; the published work reports 99.34% accuracy.
+            </p>
+            <a href="https://doi.org/10.1007/s11042-024-18842-4" target="_blank" rel="noreferrer">
+              View journal article
+            </a>
+          </article>
+          <article class="project-card" data-kind="web">
+            <div class="project-topline">
+              <span>Dec 2021 - Feb 2022</span>
+              <strong>React · Firebase</strong>
+            </div>
+            <h3>Techspardha Website</h3>
+            <p>
+              React-based technical fest platform with student registration, chatbot support, email notifications,
+              Firebase backend APIs, and live deployment.
+            </p>
+            <a href="https://techspardha.tech/" target="_blank" rel="noreferrer">Visit project</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s talk about backend, AI platform, or full-stack SDE-2 roles.</h2>
+        </div>
+        <div class="contact-actions">
+          <button class="copy-button" type="button" data-copy="arpitseth20022002@gmail.com">
+            arpitseth20022002@gmail.com
+          </button>
+          <a href="tel:+918395045959">+91 8395045959</a>
+          <a class="highlight-link" href="https://linkedin.com/in/arpit-seth/" target="_blank" rel="noreferrer">
+            linkedin.com/in/arpit-seth
+          </a>
+          <a href="https://github.com/SETHJ101" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </section>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite">Copied to clipboard</div>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
